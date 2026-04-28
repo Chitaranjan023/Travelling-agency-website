@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust | Travel Agency</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Wander<span>Lust</span></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#" class="btn-nav">Book Now</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1>Explore the Unexplored</h1>
+            <p>Handpicked boutique escapes and luxury adventures.</p>
+            <a href="#destinations" class="btn-main">Start Planning</a>
+        </div>
+    </header>
+
+    <section class="destinations" id="destinations">
+        <h2 class="section-title">Popular Destinations</h2>
+        <div class="grid">
+
+       <div class="card">
+    <div class="card-img" style="background-image: url('images/puri.jpg')"></div>
+    <h3>Puri, Odisha</h3>
+    <p>Visit the sacred Jagannath Temple and the stunning Golden Beach.</p>
+</div>
+
+<div class="card">
+    <div class="card-img" style="background-image: url('images/jaipur.jpg')"></div>
+    <h3>Jaipur, Rajasthan</h3>
+    <p>Explore the "Pink City" with its majestic forts and royal heritage.</p>
+</div>
+
+<div class="card">
+    <div class="card-img" style="background-image: url('images/keral.jpg')"></div>
+    <h3>Kerala Backwaters</h3>
+    <p>Stay in traditional houseboats along the serene palm-fringed canals.</p>
+</div>
+
+<div class="card">
+    <div class="card-img" style="background-image: url('images/ladakh.jpg')"></div>
+    <h3>Leh-Ladakh</h3>
+    <p>Adventure through the land of high passes and crystal blue lakes.</p>
+</div>
+
+            <div class="card">
+    <div class="card-img" style="background-image: url('images/maldives.jpg')"></div>
+    <h3>Maldives</h3>
+    <p>Tropical paradise with crystal clear waters.</p>
+</div>
+            <div class="card">
+                <div class="card-img" style="background-image: url('images/venice.jpg')"></div>
+                <h3>Venice</h3>
+                <p>Romantic canals and historic architecture.</p>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background-image: url('images/cinique.jpg')"></div>
+                <h3>Cinque Terre</h3>
+                <p>Colorful villages on the rugged Italian coast.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+    <div class="about-container">
+        <div class="about-text">
+            <h2 class="section-title">Why Travel With Us?</h2>
+            <p>With over 15 years of experience, we specialize in creating personalized itineraries that turn "trips" into "lifelong memories." Our team of experts is available 24/7 to ensure your journey is seamless.</p>
+            <ul class="features">
+                <li>✔ 500+ Verified Destinations</li>
+                <li>✔ Best Price Guarantee</li>
+                <li>✔ Professional Local Guides</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-card">
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="How can we help you?" rows="5" required></textarea>
+            <button type="submit" class="btn-main">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<div class="modal-overlay" id="bookingModal">
+    <div class="modal-content">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <h2>Book Your Adventure</h2>
+        <form class="booking-form">
+            <label>Destination</label>
+            <select>
+                <option>Puri (Beach & Culture)</option>
+                <option>Jaipur (Heritage)</option>
+                <option>Kerala (Backwaters)</option>
+                <option>Ladakh (Adventure)</option>
+                <option>Maldives (Luxury)</option>
+                <option>Maldives</option>
+                <option>Venice</option>
+                <option>Cinque Terre</option>
+            </select>
+            <label>Travel Date</label>
+            <input type="date">
+            <label>Number of Travelers</label>
+            <input type="number" min="1" value="1">
+            <button type="submit" class="btn-main">Confirm Interest</button>
+        </form>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
